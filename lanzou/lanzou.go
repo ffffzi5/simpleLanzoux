@@ -61,9 +61,9 @@ func Lanzou(url string, pwd string, args ...string) (string, error) {
 }
 
 func getLanzouUrl(url string, pwd *string) (string, error) {
-	if checkExpiredTime(url_cache) {
-		return url_cache, nil
-	}
+	// if checkExpiredTime(url_cache) {
+	// 	return url_cache, nil
+	// }
 
 	generateRandHeader()
 	mainUrl := string(regexp.MustCompile(`(^http.*?\.com)`).Find([]byte(url)))
