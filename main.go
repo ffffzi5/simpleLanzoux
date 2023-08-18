@@ -20,7 +20,7 @@ func main() {
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
-		fmt.Println(`完成解析，直链地址为：
+		fmt.Println(`完成解析11，直链地址为：
 ` + direct_url + `
 是否需要直接打开下载？[Y/N]`)
 		fmt.Scanln(&download)
